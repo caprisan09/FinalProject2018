@@ -22,5 +22,19 @@ public class MainActivity extends Activity {
                 startActivity(new Intent(MainActivity.this, OcTranspoActivity.class));
             }
         });
+        final Button food = findViewById(R.id.food);
+        food.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, FoodNutritionActivity.class));
+            }
+        });
+        final Button movies = findViewById(R.id.movies);
+        movies.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Movie_Activity.class));
+            }
+        });
     }
 }
