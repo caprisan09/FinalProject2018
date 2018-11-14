@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">FinalProject2018</string>
+    <string name="octranspo">OC Transpo</string>
+    <string name="food">Food Nutrition</string>
+    <string name="cbc">CBC Radio</string>
+    <string name="movies">Movies</string>
+    <string name="button">Search</string>
+    <string name="editText">Type here</string>
 </resources>
