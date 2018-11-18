@@ -8,6 +8,8 @@ import android.widget.Button;
 
 public class MainActivity extends Activity {
 private Button buttonStart;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,8 +18,15 @@ private Button buttonStart;
         buttonStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this,ListNewsActivity.class);
-                startActivity(i);
+                //Intent i = new Intent(MainActivity.this,ListNewsActivity.class);
+                //startActivity(i);
+            Intent intent = new Intent(context, ListNewsActivity.class);
+            intent.putExtra("source", webSite.getSources().get(position).getId());
+            intent.putExtra("sortBy", webSite.getSources().get(position).getSortBysAvailable).get(0);
+            context.startActivity(intent);
+
+
+
             }
         });
 

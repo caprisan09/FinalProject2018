@@ -1,15 +1,13 @@
 package com.example.hunar_parneet.finalproject2018;
 
-import android.app.Activity;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ListNewsActivity extends Activity {
-
-    String source="",sortBy="",webHotUR= "";
+public class DetailArticle extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_listnews);
+        setContentView(R.layout.activity_detail_article);
     }
 }
