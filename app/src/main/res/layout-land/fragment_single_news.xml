@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top|center"
+        android:layout_marginStart="184dp" />
+
+    <TextView
+        android:id="@+id/news_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="22dp"
+        android:freezesText="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:fontFamily="serif"
+        android:textSize="18dp"
+        />
+
+    <Button
+        android:id="@+id/more_button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="-166dp"
+        android:layout_marginTop="236dp"
+        android:layout_toEndOf="@+id/image_view"
+        android:background="@drawable/shape"
+        android:textColor="@color/colorWhite"
+        android:text="more_button"
+        android:textSize="25dp" />
+
+
+</RelativeLayout>
