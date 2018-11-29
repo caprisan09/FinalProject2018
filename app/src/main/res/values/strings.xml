@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">FinalProject2018</string>
+    <string name="app_name">CBC Breaking News</string>
+    <string name="next_button">Next</string>
+    <string name="empty_string">...</string>
+    <string name="added_toast">New newStory has been added</string>
+    <string name="more_button">Read more...</string>
 </resources>
