@@ -1,12 +1,6 @@
 package com.example.hunar_parneet.finalproject2018;
 
-/**
- * Author: Akanksha Malik
- * ID: 140901360
- * Created 2017-10-24
- */
 
-//import statements
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;

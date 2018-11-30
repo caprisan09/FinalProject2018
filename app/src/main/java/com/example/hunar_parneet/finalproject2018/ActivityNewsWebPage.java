@@ -1,7 +1,7 @@
 package com.example.hunar_parneet.finalproject2018;
 
 
-//import statements
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;

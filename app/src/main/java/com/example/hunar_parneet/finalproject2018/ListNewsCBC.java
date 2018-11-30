@@ -1,12 +1,5 @@
 package com.example.hunar_parneet.finalproject2018;
 
-/**
- * Author: Akanksha Malik
- * ID: 140901360
- * Created on: 2017-09-17
- */
-
-//import statements
 
 import android.content.Context;
 
