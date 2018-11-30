@@ -60,14 +60,14 @@ public class FragmentNewsDetail extends Fragment {
     @Override
     public void onPause(){
         super.onPause();
-        //ListNewsCBC.get(getActivity()).updateCard(mNewStory);
+
     }
 
     @TargetApi(11)
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         View v =  inflater.inflate(R.layout.fragment_single_news, container, false);
 
         setView(v);
@@ -80,7 +80,7 @@ public class FragmentNewsDetail extends Fragment {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle item selection
+
         switch (item.getItemId()) {
             case R.id.home:
                 if (NavUtils.getParentActivityName(getActivity()) != null) {
@@ -92,10 +92,7 @@ public class FragmentNewsDetail extends Fragment {
         }
     }
 
-    /**
-     * inflates the widgets
-     * param view v
-     */
+
     private void setView(View v) {
         newsTextView = (TextView) v.findViewById(R.id.news_text_view);
         imageView = (ImageView) v.findViewById(R.id.image_view);
@@ -124,28 +121,23 @@ public class FragmentNewsDetail extends Fragment {
         ConnectivityManager cm = (ConnectivityManager)
                 getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
         NetworkInfo networkInfo = cm.getActiveNetworkInfo();
-        // if no network is available networkInfo will be null
-        // otherwise check if we are connected
+
         if (networkInfo != null && networkInfo.isConnected()) {
             return true;
         }
-        Log.d("internetServiceAvailable", "network not available");
+        Log.d("Network NOT available", "network not available");
         return false;
-    } // isNetwork
-
-    /**
-     * Sets the answer in the TextView when the button is pressed
-     */
-    private void showDescription() {
-        String description = mNewStory.getDescription(); //get the paragraph
-        newsTextView.setText(description); //set the paragraph
     }
 
-    /**
-     * Sets the new image in the ImageView when the user presses "Next Question"
-     */
+
+    private void showDescription() {
+        String description = mNewStory.getDescription();
+        newsTextView.setText(description);
+    }
+
+
     private void updateImage() {
-        String imageName = mNewStory.getImageNews(); //get the image url
+        String imageName = mNewStory.getImageNews();
 
         Picasso.with(getContext())
                 .load(imageName)

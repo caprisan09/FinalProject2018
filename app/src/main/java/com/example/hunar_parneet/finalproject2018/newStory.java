@@ -1,12 +1,6 @@
 package com.example.hunar_parneet.finalproject2018;
 
-/**
- * Author: Akanksha Malik
- * ID: 140901360
- * Created on: 2017-09-17
- */
 
-//import statements
 import android.os.Parcel;
 import android.os.Parcelable;
 
@@ -14,7 +8,7 @@ import java.util.UUID;
 
 public class NewStory implements Parcelable{
 
-    //variables
+
     private UUID uuid;
     private String headLine;
     private String ImageNews;
@@ -26,12 +20,7 @@ public class NewStory implements Parcelable{
         return 0;
     }
 
-    /**
-     * Calls constructor
-     * param theImage
-     * param theQuestion
-     * param theAnswer
-     */
+
     public NewStory(String theHeadline, String theImageUrl, String theNewsUrl, String theDescription) {
         uuid = (UUID.randomUUID());
         headLine = theHeadline;
@@ -41,11 +30,7 @@ public class NewStory implements Parcelable{
 
     }
 
-    /**
-     * Retrieving NewStory data from Parcel object
-     * This constructor is invoked by the method createFromParcel(Parcel source) of
-     * the object CREATOR
-     **/
+
     private NewStory(Parcel in){
 
         this.uuid = (UUID) in.readSerializable();
@@ -55,9 +40,7 @@ public class NewStory implements Parcelable{
         this.descriptionNews = in.readString();
     }
 
-    /**
-     * Storing the NewStory data to Parcel object
-     **/
+
     @Override
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeSerializable(uuid);

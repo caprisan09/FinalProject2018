@@ -8,7 +8,7 @@ import java.util.UUID;
 
 public class ListNewsCBC {
 
-    //Constants
+
     private static ListNewsCBC sListNewsCBC;
     private ArrayList<NewStory> mNewStories;
 
@@ -20,10 +20,7 @@ public class ListNewsCBC {
         return sListNewsCBC;
     }
 
-    /**
-     * Creates cards List
-     * param context
-     */
+
     private ListNewsCBC(Context context){
         this.mNewStories = new ArrayList<NewStory>();
 

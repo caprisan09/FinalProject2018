@@ -13,11 +13,7 @@ import java.util.ArrayList;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-/**
- * Author: Akanksha Malik
- * ID: 140901360
- * Created 2017-11-18
- */
+
 
 public class newsReader {
 

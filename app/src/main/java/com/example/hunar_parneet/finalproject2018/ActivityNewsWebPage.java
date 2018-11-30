@@ -29,7 +29,7 @@ public class ActivityNewsWebPage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_news_web_page);
         progressBar = (ProgressBar) findViewById(R.id.progressBar);
-        progressBar.setMax(100); // WebChromeClient reports in range 0-100
+        progressBar.setMax(100);
         titletextview = (TextView) findViewById(R.id.title);
 
         urlNews = getIntent().getStringExtra(EXTRA_ID);
