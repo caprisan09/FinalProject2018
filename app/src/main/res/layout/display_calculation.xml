@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/totalCal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Calories"
+    />
+
+    <TextView
+        android:id="@+id/avgCal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Average Calories"
+        android:layout_below="@id/totalCal"
+        />
+
+    <TextView
+        android:id="@+id/maxCal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Maximun Calories"
+        android:layout_below="@id/avgCal"
+        />
+
+    <TextView
+        android:id="@+id/minCal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Minimum Calories"
+        android:layout_below="@id/maxCal"
+        />
+
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Back"
+
+        />
+
+</RelativeLayout>
