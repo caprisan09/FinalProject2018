@@ -24,16 +24,16 @@ public class Movie_Activity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movie);
         //---LISTVIEW---
-        listView = (ListView)findViewById(R.id.ListView);
+        listView = findViewById(R.id.ListView);
 
         //--PROGRESSBAR--
-        progressBar = (ProgressBar)findViewById(R.id.ProgressBar);
+        progressBar = findViewById(R.id.ProgressBar);
 
         //---BUTTON---
-        button=(Button)findViewById(R.id.Button);
+        button= findViewById(R.id.Button);
 
         //EDITTEXT
-        editText = (EditText)findViewById(R.id.EditText);
+        editText = findViewById(R.id.EditText);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

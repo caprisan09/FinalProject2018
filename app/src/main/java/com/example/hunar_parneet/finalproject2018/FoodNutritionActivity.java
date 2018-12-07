@@ -50,6 +50,7 @@ public class FoodNutritionActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_nutrition);
 
+
         mySelectedFood = new ArrayList<>();
         searchFoodAdapter = new SearchFoodAdapter(ctx);
         mySearchFoodDatabase = new SearchedFoodDatabase(ctx);
@@ -74,6 +75,12 @@ public class FoodNutritionActivity extends AppCompatActivity {
                 searchFoodAdapter.notifyDataSetChanged();
             }
         });
+
+        mylistView = findViewById(R.id.listView);
+        myprogressBar = findViewById(R.id.progressBar);
+        mybutton= findViewById(R.id.button);
+        myeditText= findViewById(R.id.editText);
+
 
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -7,54 +7,60 @@
     tools:context=".OcTranspoActivity">
 
     <android.support.v7.widget.Toolbar
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:id="@+id/my_toolbar"
         />
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/my_toolbar"
-        android:text="@string/heading"
-        android:textSize="25dp"
+        android:text="Hello OC Rider"
         android:id="@+id/heading"/>
 
 
 
-     <EditText
-        android:layout_width="match_parent"
+    <EditText
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:layout_below="@id/heading"
         android:hint="@string/editText"
         android:id="@+id/editText"/>
-     <Button
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button"
         android:layout_below="@id/editText"
         android:id="@+id/button"/>
-     <Button
-        android:layout_width="match_parent"
+    <Button
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Clear all History"
         android:layout_below="@id/button"
         android:id="@+id/clear_Btn"/>
 
-     <ProgressBar
+    <ProgressBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/clear_Btn"
         android:visibility="invisible"
         android:id="@+id/progressBar"/>
-     <ListView
-        android:layout_width="match_parent"
+    <ListView
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/progressBar"
         android:id="@+id/list"/>
+    <FrameLayout
+        android:layout_width="600dp"
+        android:layout_height="match_parent"
+        android:id="@+id/frame_layout"
+        android:layout_toRightOf="@id/heading"/>
+
+
 
 </RelativeLayout>

@@ -11,6 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity
             android:name=".FoodNutritionActivity"
             android:theme="@style/Theme.AppCompat.Light" />
@@ -33,7 +34,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".EmptyFrameLayoutActivity"
-            android:theme="@style/Theme.AppCompat.Light"/>
+
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".BusDetailActivity"
+            android:theme="@style/AppTheme"/>
+
     </application>
 
 </manifest>
