@@ -6,5 +6,5 @@
     <string name="more_button">Read more...</string>
     <string name="title_activity_test_toolbar">CBC Toolbar</string>
     <string name="app_not_installed">App not installed yet</string>
-    <string name="savenews">..Save this news..</string>
+    <string name="savenews"> Save this news </string>
 </resources>

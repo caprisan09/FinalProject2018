@@ -2,8 +2,10 @@ package com.example.hunar_parneet.finalproject2018;
 
 
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -27,6 +29,8 @@ import android.support.v7.app.AppCompatActivity;
 
 import java.util.UUID;
 
+import static android.widget.Toast.makeText;
+
 public class FragmentNewsDetail extends Fragment {
 
     //Constants
@@ -36,7 +40,10 @@ public class FragmentNewsDetail extends Fragment {
     private ImageView imageView;
     private TextView newsTextView;
     private Button moreButton;
+    private Button saveButton;
     private NewStory mNewStory;
+
+
 
     /**
      * param cardId
@@ -103,6 +110,7 @@ public class FragmentNewsDetail extends Fragment {
         newsTextView = (TextView) v.findViewById(R.id.news_text_view);
         imageView = (ImageView) v.findViewById(R.id.image_view);
         moreButton = (Button) v.findViewById(R.id.more_button);
+        saveButton = (Button) v.findViewById(R.id.save_button);
 
     }
 
@@ -116,13 +124,34 @@ public class FragmentNewsDetail extends Fragment {
                     Log.v("HTTP", "Network available");
 
                 } else {
-                    Toast.makeText(getActivity(),"Not available",Toast.LENGTH_SHORT).show();
+                    makeText(getActivity(),"Not available",Toast.LENGTH_SHORT).show();
                     Log.v("HTTP", "Network NOT available");
                 }
 
             }
         });
     }
+
+    private void onClickSave(){
+        moreButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (isNetworkAvailable()) {
+                    Intent intent = ActivityNewsWebPage.newIntent(getActivity(), mNewStory.getNewsUrl());
+                    startActivity(intent);
+                    Log.v("HTTP", "Network available");
+
+                } else {
+                    makeText(getActivity(),"Not available",Toast.LENGTH_SHORT).show();
+                    Log.v("HTTP", "Network NOT available");
+                }
+
+            }
+        });
+    }
+
+
+
     public boolean isNetworkAvailable() {
         ConnectivityManager cm = (ConnectivityManager)
                 getActivity().getSystemService(Context.CONNECTIVITY_SERVICE);
