@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+
+
+        />
+    <Button
+        android:id="@+id/deleteFav"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@id/calculate"
+
+        />
+
+    <ListView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/favList"/>
+    <FrameLayout
+        android:layout_width="600dp"
+        android:layout_height="match_parent"
+        android:layout_toRightOf="@id/listView"
+        android:id="@+id/frameLayout"/>
+
+</RelativeLayout>
+
+
+
+
+
+
+

@@ -11,11 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FoodNutritionActivity" />
-        <activity android:name=".Movie_Activity" />
+
         <activity
-            android:name=".OcTranspoActivity"
-            android:theme="@style/AppTheme" />
+            android:name=".FoodNutritionActivity"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".DataFromWebsite"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".DisplayCalculation"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity
+            android:name=".ListOfFav"
+            android:theme="@style/Theme.AppCompat.Light" />
+        <activity android:name=".Movie_Activity" />
+        <activity android:name=".OcTranspoActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,9 +34,11 @@
             </intent-filter>
         </activity>
         <activity android:name=".EmptyFrameLayoutActivity"
+
             android:theme="@style/AppTheme"/>
         <activity android:name=".BusDetailActivity"
             android:theme="@style/AppTheme"/>
+
     </application>
 
 </manifest>

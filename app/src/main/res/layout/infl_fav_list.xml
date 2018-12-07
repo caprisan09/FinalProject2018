@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/favFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="18dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <TextView
+        android:id="@+id/favFoodCalories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="TextView"
+        android:layout_below="@id/favFood"
+
+
+        />
+    <TextView
+        android:id="@+id/favFoodFat"
+        android:layout_width="wrap_content"
+        android:textSize="18dp"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@id/favFoodCalories"
+
+
+        />
+
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tag_me"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
