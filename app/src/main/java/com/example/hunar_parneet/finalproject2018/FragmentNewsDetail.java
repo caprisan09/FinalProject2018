@@ -3,8 +3,10 @@ package com.example.hunar_parneet.finalproject2018;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.content.ContentValues;
 import android.content.Context;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -25,11 +27,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.squareup.picasso.Picasso;
-import android.support.v7.app.AppCompatActivity;
 
 import java.util.UUID;
 
 import static android.widget.Toast.makeText;
+
 
 public class FragmentNewsDetail extends Fragment {
 
@@ -42,7 +44,8 @@ public class FragmentNewsDetail extends Fragment {
     private Button moreButton;
     private Button saveButton;
     private NewStory mNewStory;
-
+    private static SQLiteDatabase db;
+    private static NewsDatabaseHelper helper;
 
 
     /**
@@ -62,12 +65,15 @@ public class FragmentNewsDetail extends Fragment {
         super.onCreate(savedInstanceState);
         //setHasOptionsMenu(true);
 
-
+        Context ctx = getContext();
+         helper = new NewsDatabaseHelper(ctx);
+         db = helper.getWritableDatabase();
 
 
         UUID cardId = (UUID) getArguments().getSerializable(ARG_CARD_ID);
         mNewStory = ListNewsCBC.get(getActivity()).getArticle(cardId);
     }
+
 
 
     @Override
@@ -87,6 +93,7 @@ public class FragmentNewsDetail extends Fragment {
         showDescription();
         updateImage();
         onClickMore();
+        onClickSave();
 
         return v;
     }
@@ -133,23 +140,22 @@ public class FragmentNewsDetail extends Fragment {
     }
 
     private void onClickSave(){
-        moreButton.setOnClickListener(new View.OnClickListener() {
+        saveButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (isNetworkAvailable()) {
-                    Intent intent = ActivityNewsWebPage.newIntent(getActivity(), mNewStory.getNewsUrl());
-                    startActivity(intent);
-                    Log.v("HTTP", "Network available");
-
-                } else {
-                    makeText(getActivity(),"Not available",Toast.LENGTH_SHORT).show();
-                    Log.v("HTTP", "Network NOT available");
-                }
+                String texta = mNewStory.getNewsUrl();
+                ContentValues values = new ContentValues();
+                values.put(NewsDatabaseHelper.KEY_NEWS_TITLE,texta);
 
             }
         });
     }
 
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        db.close();
+    }
 
 
     public boolean isNetworkAvailable() {

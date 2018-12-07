@@ -29,7 +29,7 @@ public class NewsDatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(" CREATE TABLE " + TABLE_NAME + " (" +
-                KEY_ID + " INTEGER PRIMARY KEY, " +
+                KEY_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 KEY_URL + " TEXT, " +
                 KEY_NEWS_TITLE + " TEXT);"
         );
