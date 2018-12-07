@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name"></string>
+    <string name="octranspo">OC Transpo</string>
+    <string name="food">Nutrición alimentaria</string>
+    <string name="cbc">CBC Radio</string>
+    <string name="movies">Películas</string>
+    <string name="button">Búsqueda</string>
+    <string name="editText">Escriba aquí</string>
+    <string name="dialog_message">El autobús está en camino</string>
+    <string name="dialog_title">Actualización Reciente</string>
+    <string name="ok">Vale</string>
+    <string name="cancel">Cancelar</string>
+    <string name="author_name">Autor: Hunardeep Sandhu\nThis app is used to search oc transpo bus routes</string>
+    <string name="app_title"></string>
+    <string name="back_Btn">PÁGINA DE INICIO</string>
+    <string name="heading">Hola OC Transpo Rider</string>
+</resources>

@@ -25,10 +25,10 @@ public class FoodNutritionActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_nutrition);
 
-        listView = (ListView)findViewById(R.id.listView);
-        progressBar =(ProgressBar) findViewById(R.id.progressBar);
-        button=(Button)findViewById(R.id.button);
-        editText=(EditText)findViewById(R.id.editText);
+        listView = findViewById(R.id.listView);
+        progressBar = findViewById(R.id.progressBar);
+        button= findViewById(R.id.button);
+        editText= findViewById(R.id.editText);
 
         button.setOnClickListener(new View.OnClickListener() {
             @Override

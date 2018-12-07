@@ -6,4 +6,12 @@
     <string name="movies">Movies</string>
     <string name="button">Search</string>
     <string name="editText">Type here</string>
+    <string name="dialog_message">Bus is on the way</string>
+    <string name="dialog_title">Recent update</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="author_name">Author: Hunardeep Sandhu\nThis app is used to search oc transpo bus routes</string>
+    <string name="app_title"></string>
+    <string name="back_Btn">HOME PAGE</string>
+    <string name="heading">Hello OC Transpo Rider</string>
 </resources>

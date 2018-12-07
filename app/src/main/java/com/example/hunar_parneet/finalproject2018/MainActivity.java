@@ -6,10 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+/**
+ *
+ */
 public class MainActivity extends Activity {
 
 
-
+    /**
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +22,10 @@ public class MainActivity extends Activity {
 
         final Button ocTranspo = findViewById(R.id.octranspo);
         ocTranspo.setOnClickListener(new View.OnClickListener() {
+            /**
+             *
+             * @param v
+             */
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, OcTranspoActivity.class));
@@ -24,6 +33,10 @@ public class MainActivity extends Activity {
         });
         final Button food = findViewById(R.id.food);
         food.setOnClickListener(new View.OnClickListener() {
+            /**
+             *
+             * @param v
+             */
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, FoodNutritionActivity.class));
@@ -31,6 +44,10 @@ public class MainActivity extends Activity {
         });
         final Button movies = findViewById(R.id.movies);
         movies.setOnClickListener(new View.OnClickListener() {
+            /**
+             *
+             * @param v
+             */
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, Movie_Activity.class));
