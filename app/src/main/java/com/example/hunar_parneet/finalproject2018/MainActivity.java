@@ -53,5 +53,16 @@ public class MainActivity extends Activity {
                 startActivity(new Intent(MainActivity.this, Movie_Activity.class));
             }
         });
+        final Button cbc = findViewById(R.id.cbc);
+        cbc.setOnClickListener(new View.OnClickListener() {
+            /**
+             *
+             * @param v
+             */
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, StartActivity.class));
+            }
+        });
     }
 }

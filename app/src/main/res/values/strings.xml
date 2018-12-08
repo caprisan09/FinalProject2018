@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FinalProject2018</string>
+
     <string name="octranspo">OC Transpo</string>
     <string name="food">Food Nutrition</string>
     <string name="cbc">CBC Radio</string>
@@ -14,4 +14,20 @@
     <string name="app_title"></string>
     <string name="back_Btn">HOME PAGE</string>
     <string name="heading">Hello OC Transpo Rider</string>
+    <string name="app_name">CBC</string>
+
+    <string name="next_button">Next</string>
+
+    <string name="empty_string">...</string>
+
+    <string name="added_toast">New newStory has been added</string>
+
+    <string name="more_button">Read more...</string>
+
+    <string name="title_activity_test_toolbar">CBC Toolbar</string>
+
+    <string name="app_not_installed">App not installed yet</string>
+
+    <string name="savenews"> Save this news </string>
+
 </resources>

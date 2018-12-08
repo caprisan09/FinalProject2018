@@ -76,10 +76,10 @@ public class FoodNutritionActivity extends AppCompatActivity {
             }
         });
 
-        mylistView = findViewById(R.id.listView);
+        /*mylistView = findViewById(R.id.listView);
         myprogressBar = findViewById(R.id.progressBar);
         mybutton= findViewById(R.id.button);
-        myeditText= findViewById(R.id.editText);
+        myeditText= findViewById(R.id.editText);*/
 
 
         searchButton.setOnClickListener(new View.OnClickListener() {

@@ -170,7 +170,7 @@ public class ListOfFav extends AppCompatActivity {
                 {
                     Log.i(ACTIVITY_NAME, "I am on phone");
                     //go to new window:
-                    Intent nextPage = new Intent(ListOfFav.this, EmptyFrameLayoutActivity.class);
+                    Intent nextPage = new Intent(ListOfFav.this, EmptyFrameActivity.class);
                     nextPage.putExtras(infoToPass); //send info
                     startActivityForResult(nextPage, 97);
                 }
