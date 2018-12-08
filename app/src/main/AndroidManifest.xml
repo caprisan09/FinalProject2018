@@ -3,6 +3,7 @@
     package="com.example.hunar_parneet.finalproject2018">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -15,6 +16,13 @@
         <activity
             android:name=".FoodNutritionActivity"
             android:theme="@style/Theme.AppCompat.Light" />
+        <activity android:name=".ActivityListNews"/>
+        <activity android:name=".StartActivity">
+
+    </activity>
+        <activity android:name=".ActivityNewsWebPage"/>
+        <activity android:name=".ArticleDetailActivity"/>
+        <activity android:name=".SavedNews"/>
         <activity
             android:name=".DataFromWebsite"
             android:theme="@style/Theme.AppCompat.Light" />
@@ -28,12 +36,16 @@
         <activity android:name=".OcTranspoActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".EmptyFrameLayoutActivity"
+
+            android:theme="@style/AppTheme"/>
+        <activity android:name=".EmptyFrameActivity"
 
             android:theme="@style/AppTheme"/>
         <activity android:name=".BusDetailActivity"

@@ -411,7 +411,7 @@ public class OcTranspoActivity extends AppCompatActivity {
                 break;
 
             case R.id.news:
-                Intent news_page = new Intent(OcTranspoActivity.this, Movie_Activity.class);
+                Intent news_page = new Intent(OcTranspoActivity.this, StartActivity.class);
                 startActivity(news_page);
                 break;
             case R.id.bus:
